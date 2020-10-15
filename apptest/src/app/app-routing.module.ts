@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
+    path: 'tab1',
+    loadChildren: () => import('./tab1/tab1.module').then( m => m.Tab1PageModule)
+  },
+  {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   },
@@ -18,6 +22,11 @@ const routes: Routes = [
     path: 'tab6',
     loadChildren: () => import('./tab6/tab6.module').then( m => m.Tab6PageModule)
   },
+  {
+    path: '**',
+    loadChildren: () => import('./e404/e404.module').then( m => m.E404PageModule)
+  }
+
 ];
 @NgModule({
   imports: [

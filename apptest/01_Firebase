@@ -1,0 +1,25 @@
+Passos para a conexão com o firebase
+
+1) variaveis do Firebase
+    src/environment.ts -> passo 1
+
+2)Instalar @angular/fire
+
+    ng add @angular/fire
+
+3) Importar Firebase no 'app.module.ts'
+
+    edite 'src/app/app.module.ts' --> passos 1 e 2
+
+
+Autenticação  usando login social Google
+**********************************************
+1) Criar Aplicação 
+
+    edite 'src/app/tab6/tab6.ts' --> passo 1 até 4
+
+2) Cria a view
+
+    edite 'src/app/tab6.html' --> passo 1 até   
+
+
