@@ -19,9 +19,9 @@ h3{
 
 .text{
     font-size: 10px;
+    text-align: left;
 }
-
-ion-button{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 7%, rgba(9,9,121,1) 51%, rgba(0,95,255,1) 100%);
+.textR{
+    font-size: 10px;
+    text-align: right;
 }

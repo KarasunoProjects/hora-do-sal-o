@@ -6,8 +6,28 @@
   
 <img class="ftLogo" src="https://static.vecteezy.com/system/resources/previews/000/648/732/non_2x/beauty-salon-logo-design-inspiration-vector.jpg">
 </div>
+<<<<<<< Updated upstream
 <div class="esp">
   <ion-button expand="block" class="text bt" >Conect-se com o Facebook</ion-button>
+=======
+<div class="block">
+
+  <!--<ion-button expand="block" class="text bt" > Conect-se com o Facebook</ion-button>-->
+
+  <!-- Exibia dados do usuario-->
+  
+  <div *ngIf="afAuth.user | async as  user; else showLogin"></div>
+
+
+<!--Exibir botão se não estiver Logado-->
+  <ng-template #showLogin>
+    <p>Faça seu Login:</p>
+    
+      <ion-button  (click)="login()" expand="block" class="text" >Entrar com o Google</ion-button>
+    
+  </ng-template>
+
+>>>>>>> Stashed changes
 
 </div>
 </ion-content>
